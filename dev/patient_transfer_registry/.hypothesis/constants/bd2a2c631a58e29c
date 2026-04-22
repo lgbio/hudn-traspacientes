@@ -1,0 +1,4 @@
+# file: /home/lg/APPS/Hospital/hudn-transpacientes/dev/patient_transfer_registry/config/settings.py
+# hypothesis_version: 6.135.26
+
+['*', '/', '/login/', '/media/', '/static/', 'APP_DIRS', 'America/Bogota', 'BACKEND', 'DIRS', 'ENGINE', 'NAME', 'OPTIONS', 'app_traslados', 'config.urls', 'context_processors', 'db.sqlite3', 'default', 'django.contrib.admin', 'django.contrib.auth', 'es-co', 'media', 'staticfiles']

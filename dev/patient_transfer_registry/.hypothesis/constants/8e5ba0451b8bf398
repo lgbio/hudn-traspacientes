@@ -1,0 +1,4 @@
+# file: /home/lg/APPS/Hospital/hudn-transpacientes/dev/patient_transfer_registry/app_traslados/forms.py
+# hypothesis_version: 6.135.26
+
+[100, 150, 255, 'Conductor', 'Contraseña inicial', 'Destino', 'Documento', 'Fecha', 'Hora Reporte', 'Hora de Egreso', 'Hora de Ingreso', 'Médico', 'Nombre de Paciente', 'Nombre de usuario', 'Observación', 'Procedimiento', 'Quien Reporta', 'Radio Operador', 'Rol', 'Servicio', 'ambulancia', 'autocomplete', 'class', 'conductor', 'date', 'destino', 'documento', 'fecha', 'hora_egreso', 'hora_ingreso', 'hora_reporte', 'maxlength', 'medico', 'new-password', 'nombre_paciente', 'observacion', 'off', 'procedimiento', 'quien_reporta', 'radio_operador', 'rows', 'servicio', 'time', 'type']

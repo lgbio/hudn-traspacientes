@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		@page {
+			size: A4 landscape;
+			margin: 1cm;
+		}
+
+		body {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 7pt;
+			color: #000;
+		}
+
+		h1 {
+			font-size: 11pt;
+			text-align: center;
+			margin-bottom: 8px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			table-layout: fixed;
+		}
+
+		th {
+			background-color: #2563eb;
+			color: #fff;
+			font-size: 6.5pt;
+			font-weight: bold;
+			text-align: center;
+			padding: 3px 2px;
+			border: 1px solid #1d4ed8;
+			word-wrap: break-word;
+		}
+
+		td {
+			font-size: 6.5pt;
+			padding: 2px 2px;
+			border: 1px solid #d1d5db;
+			word-wrap: break-word;
+			vertical-align: top;
+		}
+
+		tr:nth-child(even) td {
+			background-color: #f3f4f6;
+		}
+
+		.sin-registros {
+			text-align: center;
+			font-style: italic;
+			color: #6b7280;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Reporte de Traslados de Pacientes — Mes {{ mes }}</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>FECHA</th>
+				<th>HORA REPORTE</th>
+				<th>HORA DE EGRESO</th>
+				<th>HORA DE INGRESO</th>
+				<th>NOMBRE DE PACIENTE</th>
+				<th>DOCUMENTO</th>
+				<th>SERVICIO</th>
+				<th>QUIEN REPORTA</th>
+				<th>DESTINO</th>
+				<th>PROCEDIMIENTO</th>
+				<th>MÉDICO</th>
+				<th>CONDUCTOR</th>
+				<th>RADIO OPERADOR</th>
+				<th>AMBULANCIA DE TRASLADO</th>
+				<th>OBSERVACIÓN</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for registro in registros %}
+			<tr>
+				<td>{{ registro.fecha }}</td>
+				<td>{{ registro.hora_reporte }}</td>
+				<td>{{ registro.hora_egreso|default:'' }}</td>
+				<td>{{ registro.hora_ingreso|default:'' }}</td>
+				<td>{{ registro.nombre_paciente }}</td>
+				<td>{{ registro.documento }}</td>
+				<td>{{ registro.servicio }}</td>
+				<td>{{ registro.quien_reporta }}</td>
+				<td>{{ registro.destino }}</td>
+				<td>{{ registro.procedimiento }}</td>
+				<td>{{ registro.medico }}</td>
+				<td>{{ registro.conductor }}</td>
+				<td>{{ registro.radio_operador }}</td>
+				<td>{{ registro.ambulancia }}</td>
+				<td>{{ registro.observacion }}</td>
+			</tr>
+			{% empty %}
+			<tr>
+				<td colspan="15" class="sin-registros">No hay registros para el período seleccionado.</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
