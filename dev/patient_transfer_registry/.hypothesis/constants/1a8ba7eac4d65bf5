@@ -1,4 +1,0 @@
-# file: /home/lg/APPS/Hospital/hudn-transpacientes/dev/patient_transfer_registry/app_traslados/views.py
-# hypothesis_version: 6.135.26
-
-[403, 405, 500, 'ABIERTO', 'CERRADO', 'Content-Disposition', 'DIRECTOR', 'FUNCIONARIO', 'GET', 'HX-Trigger', 'Método no permitido.', 'POST', 'accion', 'application/pdf', 'cancelar', 'cerrarModal', 'confirmar', 'contrasena_actual', 'controlMes', 'crear', 'diaDesde', 'diaHasta', 'dia_desde', 'dia_hasta', 'diasEnMes', 'editar', 'errorEliminar', 'erroresFiltro', 'estadoMes', 'exito', 'fecha', 'fechaActual', 'formulario', 'mensaje', 'mes', 'mesActual', 'mesCerrado', 'mesSeleccionado', 'meses', 'nueva_contrasena', 'password', 'perfil', 'principal', 'registro', 'registros', 'rol', 'rolUsuario', 'username', 'usuarioObjetivo', 'usuarios']

@@ -1,4 +1,0 @@
-# file: /home/lg/APPS/Hospital/hudn-transpacientes/dev/patient_transfer_registry/app_traslados/migrations/0001_initial.py
-# hypothesis_version: 6.135.26
-
-[100, 255, 'ABIERTO', 'Abierto', 'CERRADO', 'Cerrado', 'Control de Mes', 'Control de Meses', 'ControlMes', 'DIRECTOR', 'Director', 'FUNCIONARIO', 'Funcionario', 'ID', 'Perfil', 'Perfiles', 'Traslado de Paciente', 'TrasladoPaciente', 'ambulancia', 'cerrado_por', 'conductor', 'destino', 'documento', 'estado', 'fecha', 'fecha_cierre', 'hora_egreso', 'hora_ingreso', 'hora_reporte', 'id', 'indexes', 'medico', 'mes', 'meses_cerrados', 'nombre_paciente', 'observacion', 'ordering', 'perfil', 'procedimiento', 'quien_reporta', 'radio_operador', 'rol', 'servicio', 'usuario', 'verbose_name', 'verbose_name_plural']

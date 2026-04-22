@@ -1,4 +1,0 @@
-# file: /home/lg/APPS/Hospital/hudn-transpacientes/dev/patient_transfer_registry/app_traslados/services/report_excel.py
-# hypothesis_version: 6.135.26
-
-['CONDUCTOR', 'DESTINO', 'DOCUMENTO', 'FECHA', 'HORA DE EGRESO', 'HORA DE INGRESO', 'HORA REPORTE', 'MÉDICO', 'NOMBRE DE PACIENTE', 'OBSERVACIÓN', 'PROCEDIMIENTO', 'QUIEN REPORTA', 'RADIO OPERADOR', 'SERVICIO']
