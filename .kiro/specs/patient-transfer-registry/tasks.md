@@ -2,14 +2,14 @@
 
 ## Descripción General
 
-Implementación incremental de la aplicación Django `app_traslados` siguiendo el patrón MVT con HTMX para actualizaciones parciales. Cada tarea construye sobre la anterior, comenzando por la estructura del proyecto y los modelos, avanzando por las vistas y plantillas, hasta los reportes y la limpieza de datos.
+Implementación incremental de la aplicación Django `traslados` siguiendo el patrón MVT con HTMX para actualizaciones parciales. Cada tarea construye sobre la anterior, comenzando por la estructura del proyecto y los modelos, avanzando por las vistas y plantillas, hasta los reportes y la limpieza de datos.
 
 ## Tareas
 
-- [x] 1. Configurar estructura del proyecto Django y la app `app_traslados`
+- [x] 1. Configurar estructura del proyecto Django y la app `traslados`
   - Crear el proyecto Django con el paquete de configuración `config/` (settings.py, urls.py, wsgi.py)
-  - Crear la app `app_traslados` con la estructura de directorios: `services/`, `templates/app_traslados/partials/`, `static/app_traslados/css/` y `static/app_traslados/js/`
-  - Registrar `app_traslados` en `INSTALLED_APPS`
+  - Crear la app `traslados` con la estructura de directorios: `services/`, `templates/traslados/partials/`, `static/traslados/css/` y `static/traslados/js/`
+  - Registrar `traslados` en `INSTALLED_APPS`
   - Configurar `TEMPLATES`, `STATIC_URL`, `MEDIA_ROOT`, `LOGIN_URL = '/login/'` y `LOGIN_REDIRECT_URL = '/'` en settings.py
   - Instalar dependencias: `django`, `openpyxl`, `xhtml2pdf` (versiones fijas en requirements.txt)
   - Crear `base.html` con bloque de contenido, CDN de Tailwind CSS y bloque para scripts HTMX
@@ -151,7 +151,7 @@ Implementación incremental de la aplicación Django `app_traslados` siguiendo e
     - `modal_form.html`: formulario vertical etiqueta:campo, botones "Guardar" y "Cancelar", mensajes de error por campo
     - _Requirements: 3.1, 3.2, 3.3, 3.8_
 
-  - [x] 7.7 Implementar el manejador de doble clic en `static/app_traslados/js/main.js`
+  - [x] 7.7 Implementar el manejador de doble clic en `static/traslados/js/main.js`
     - Escuchar `dblclick` en elementos `<tr>` de la tabla
     - Si `data-mes-estado == "ABIERTO"`, disparar la misma solicitud HTMX que el botón "[e] Editar" de esa fila
     - Si `data-mes-estado == "CERRADO"`, ignorar el evento silenciosamente (sin mensaje, sin acción)
@@ -307,4 +307,4 @@ Implementación incremental de la aplicación Django `app_traslados` siguiendo e
 - Los tests unitarios validan ejemplos específicos y casos borde
 - El campo `mes` de `TrasladoPaciente` es siempre derivado de `fecha`; no existe campo `estado_cierre` en ese modelo
 - El estado de cierre de mes es gestionado exclusivamente por `ControlMes`
-- La app Django se llama `app_traslados` (prefijo `app_` según convención del proyecto)
+- La app Django se llama `traslados` (prefijo `app_` según convención del proyecto)
